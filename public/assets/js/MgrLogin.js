@@ -18,11 +18,9 @@ $(document).ready(function () {
 
                         // On success, run the following code
 
-                        //STILL NEED VALIDATION
+                        // STILL NEED VALIDATION
                         .then(function (data) {
-                                if(err){ 
-                                    alert("error!!")    
-                                } else {
+   
                                         var id = data.id;
                                         console.log("id = " + id);
                                         // Stores the manager ID retrieved from the database in the session 
@@ -34,11 +32,12 @@ $(document).ready(function () {
         
         
                                         window.location.href = 'MgrCreateEvent.html';
-                                }
- 
 
 
-                        })
+
+                        }).catch(function(err){
+                                alert("error!")
+                        });
 
 
 

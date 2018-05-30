@@ -2,14 +2,14 @@ var db = require("../models");
 
 module.exports = function (app) {
 
-    //API Route for Volunteer to regster as user
+    // API Route for Volunteer to regster as user
     app.post("/api/newVolunteer", function (req, res) {
         db.Volunteer.create(req.body).then(function (dbVolunteer) {
             res.json(dbVolunteer)
         });
     });
 
-    //API Route for Volunteer to see all events
+    // API Route for Volunteer to see all events
     // app.get("/api/events", function (req, res) {
     app.get("/api/events/:id", function (req, res) {
 
@@ -31,7 +31,7 @@ module.exports = function (app) {
             time_slot: req.body.time_slot
         }, {
             where: {
-                //this is the event id
+                // this is the event id
                 id: req.body.id
             }
         }).then(function (dbEventVolunteer) {

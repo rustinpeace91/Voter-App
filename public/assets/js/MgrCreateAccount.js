@@ -9,6 +9,7 @@ $(document).ready(function () {
     $(document).on("submit", "#manager-createAccount-form", handleCreateAccountFormSubmit);
     console.log("Manager create account is clicked");
     // A function to handle what happens when the form is submitted to create a new Author
+    
     function handleCreateAccountFormSubmit(event) {
         event.preventDefault();
 

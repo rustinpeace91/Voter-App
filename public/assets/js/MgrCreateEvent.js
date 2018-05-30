@@ -6,6 +6,7 @@ $(document).ready(function () {
     // *************************FOR MANGER CREATING EVENT FORM*********************************
 
     // ########################################################################################
+
     $("#login").on("click", function (event) {
         event.preventDefault();
 
@@ -54,7 +55,7 @@ $(document).ready(function () {
         $("#volunteers_needed").val("");
         $("#event_description").val("");
 
-        //Loads next page
+        // Loads next page
 
         window.location.href = 'MgrEventListings.html';
 

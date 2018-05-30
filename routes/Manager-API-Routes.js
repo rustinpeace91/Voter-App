@@ -41,7 +41,7 @@ module.exports = function (app) {
 
     }).catch(function(err){
       // when the manager email is not found in the database, returns a status of 400
-      res.json(status(400));
+      res.status(400).json(err);
     });
   });
 
