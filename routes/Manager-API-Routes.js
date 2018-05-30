@@ -3,9 +3,12 @@ var db = require("../models");
 
 // Routes
 // =============================================================
+//
+
 module.exports = function (app) {
 
-  // Posts Manager when a new ACCOUNT is created 
+  // Posts Manager when a new account is created 
+
   app.post("/api/manager", function (req, res) {
     console.log("req.body = ", req.body);
     db.Manager.create({
@@ -24,6 +27,10 @@ module.exports = function (app) {
       });
   });
 
+  // Gets the manager by email when a new account is created
+  // tried to employ validation by catching the error, however it is not currently working
+
+
   app.get("/api/manager/:email", function(req,res){
     db.Manager.findOne({
       where: {
@@ -32,11 +39,16 @@ module.exports = function (app) {
     }).then(function(dbManager){
       res.json(dbManager.toJSON());
 
-    })
+    }).catch(function(err){
+      // when the manager email is not found in the database, returns a status of 400
+      res.json(status(400));
+    });
   });
 
 
+
   // Posts Manager EVENTS for the Manager 
+
   app.post("/api/managersevents", function (req, res) {
     console.log("req.body = ", req.body);
     db.CampaignEvent.create({
@@ -62,6 +74,7 @@ module.exports = function (app) {
 
   // Get EVENTS for the Manager 
   //THIS MIGHT NEED A PARAMETER BASED UP MANAGER ID
+
   app.get("/api/events/:id", function (req, res) {
     CampaignEvent.findAll({
       where: {

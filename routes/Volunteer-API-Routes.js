@@ -2,12 +2,12 @@ var db = require("../models");
 
 module.exports = function (app) {
 
-        //API Route for Volunteer to regster as user
-        app.post("/api/newVolunteer", function (req, res) {
-            db.Volunteer.create(req.body).then(function (dbVolunteer) {
-                res.json(dbVolunteer)
-            });
+    //API Route for Volunteer to regster as user
+    app.post("/api/newVolunteer", function (req, res) {
+        db.Volunteer.create(req.body).then(function (dbVolunteer) {
+            res.json(dbVolunteer)
         });
+    });
 
     //API Route for Volunteer to see all events
     // app.get("/api/events", function (req, res) {

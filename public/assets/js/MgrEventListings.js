@@ -1,3 +1,5 @@
+// displays event listings by the manager
+
 $(document).ready(function () {
     console.log("MgrEventListings ready!");
 

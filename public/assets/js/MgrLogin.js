@@ -20,20 +20,25 @@ $(document).ready(function () {
 
                         //STILL NEED VALIDATION
                         .then(function (data) {
-                                var id = data.id;
-                                console.log("id = " + id);
-                                // Stores the manager ID retrieved from the database in the session 
-                                sessionStorage.setItem("managerId", parseInt(data.id));
-                                window.location.href = "index.html";
-                                console.log("redirecting");
-                                sessionStorage.setItem("managerEmail", $("#emailAddr").val().trim());
-                                // alert("please enter a valid email address");
+                                if(err){ 
+                                    alert("error!!")    
+                                } else {
+                                        var id = data.id;
+                                        console.log("id = " + id);
+                                        // Stores the manager ID retrieved from the database in the session 
+                                        sessionStorage.setItem("managerId", parseInt(data.id));
+                                        window.location.href = "index.html";
+                                        console.log("redirecting");
+                                        sessionStorage.setItem("managerEmail", $("#emailAddr").val().trim());
+                                        // alert("please enter a valid email address");
+        
+        
+                                        window.location.href = 'MgrCreateEvent.html';
+                                }
+ 
 
 
-                                window.location.href = 'MgrCreateEvent.html';
-
-
-                        });
+                        })
 
 
 
