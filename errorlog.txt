@@ -1,0 +1,89 @@
+2018-05-30T17:59:50.909445+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-05-30T17:59:53.902697+00:00 app[web.1]: 
+2018-05-30T17:59:53.902738+00:00 app[web.1]: > voting-app@1.0.0 start /app
+2018-05-30T17:59:53.902740+00:00 app[web.1]: > node server.js
+2018-05-30T17:59:53.902741+00:00 app[web.1]: 
+2018-05-30T17:59:54.887669+00:00 app[web.1]: module.js:549
+2018-05-30T17:59:54.887714+00:00 app[web.1]: throw err;
+2018-05-30T17:59:54.887717+00:00 app[web.1]: ^
+2018-05-30T17:59:54.887718+00:00 app[web.1]: 
+2018-05-30T17:59:54.887720+00:00 app[web.1]: Error: Cannot find module '/app/models/../config/config.json'
+2018-05-30T17:59:54.887722+00:00 app[web.1]: at Function.Module._resolveFilename (module.js:547:15)
+2018-05-30T17:59:54.887724+00:00 app[web.1]: at Function.Module._load (module.js:474:25)
+2018-05-30T17:59:54.887725+00:00 app[web.1]: at Module.require (module.js:596:17)
+2018-05-30T17:59:54.887727+00:00 app[web.1]: at require (internal/module.js:11:18)
+2018-05-30T17:59:54.887729+00:00 app[web.1]: at Object.<anonymous> (/app/models/index.js:8:14)
+2018-05-30T17:59:54.887730+00:00 app[web.1]: at Module._compile (module.js:652:30)
+2018-05-30T17:59:54.887732+00:00 app[web.1]: at Object.Module._extensions..js (module.js:663:10)
+2018-05-30T17:59:54.887733+00:00 app[web.1]: at Module.load (module.js:565:32)
+2018-05-30T17:59:54.887735+00:00 app[web.1]: at tryModuleLoad (module.js:505:12)
+2018-05-30T17:59:54.887736+00:00 app[web.1]: at Function.Module._load (module.js:497:3)
+2018-05-30T17:59:54.887738+00:00 app[web.1]: at Module.require (module.js:596:17)
+2018-05-30T17:59:54.887739+00:00 app[web.1]: at require (internal/module.js:11:18)
+2018-05-30T17:59:54.887741+00:00 app[web.1]: at Object.<anonymous> (/app/server.js:16:10)
+2018-05-30T17:59:54.887742+00:00 app[web.1]: at Module._compile (module.js:652:30)
+2018-05-30T17:59:54.887744+00:00 app[web.1]: at Object.Module._extensions..js (module.js:663:10)
+2018-05-30T17:59:54.887745+00:00 app[web.1]: at Module.load (module.js:565:32)
+2018-05-30T17:59:54.887747+00:00 app[web.1]: at tryModuleLoad (module.js:505:12)
+2018-05-30T17:59:54.887748+00:00 app[web.1]: at Function.Module._load (module.js:497:3)
+2018-05-30T17:59:54.887750+00:00 app[web.1]: at Function.Module.runMain (module.js:693:10)
+2018-05-30T17:59:54.887751+00:00 app[web.1]: at startup (bootstrap_node.js:191:16)
+2018-05-30T17:59:54.887753+00:00 app[web.1]: at bootstrap_node.js:612:3
+2018-05-30T17:59:54.897910+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-05-30T17:59:54.898642+00:00 app[web.1]: npm ERR! errno 1
+2018-05-30T17:59:54.900973+00:00 app[web.1]: npm ERR! voting-app@1.0.0 start: `node server.js`
+2018-05-30T17:59:54.901239+00:00 app[web.1]: npm ERR! Exit status 1
+2018-05-30T17:59:54.901650+00:00 app[web.1]: npm ERR!
+2018-05-30T17:59:54.901917+00:00 app[web.1]: npm ERR! Failed at the voting-app@1.0.0 start script.
+2018-05-30T17:59:54.902211+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-05-30T17:59:55.092210+00:00 app[web.1]: 
+2018-05-30T17:59:55.101616+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-05-30T17:59:55.105020+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-05-30T17_59_54_904Z-debug.log
+2018-05-30T17:59:55.203458+00:00 heroku[web.1]: Process exited with status 1
+2018-05-30T17:59:55.223709+00:00 heroku[web.1]: State changed from starting to crashed
+2018-05-30T17:59:55.226730+00:00 heroku[web.1]: State changed from crashed to starting
+2018-05-30T17:59:57.520209+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-05-30T17:59:59.499248+00:00 app[web.1]: 
+2018-05-30T17:59:59.499269+00:00 app[web.1]: > voting-app@1.0.0 start /app
+2018-05-30T17:59:59.499271+00:00 app[web.1]: > node server.js
+2018-05-30T17:59:59.499273+00:00 app[web.1]: 
+2018-05-30T17:59:59.897213+00:00 app[web.1]: module.js:549
+2018-05-30T17:59:59.897245+00:00 app[web.1]: throw err;
+2018-05-30T17:59:59.897246+00:00 app[web.1]: ^
+2018-05-30T17:59:59.897248+00:00 app[web.1]: 
+2018-05-30T17:59:59.897249+00:00 app[web.1]: Error: Cannot find module '/app/models/../config/config.json'
+2018-05-30T17:59:59.897250+00:00 app[web.1]: at Function.Module._resolveFilename (module.js:547:15)
+2018-05-30T17:59:59.897252+00:00 app[web.1]: at Function.Module._load (module.js:474:25)
+2018-05-30T17:59:59.897253+00:00 app[web.1]: at Module.require (module.js:596:17)
+2018-05-30T17:59:59.897254+00:00 app[web.1]: at require (internal/module.js:11:18)
+2018-05-30T17:59:59.897255+00:00 app[web.1]: at Object.<anonymous> (/app/models/index.js:8:14)
+2018-05-30T17:59:59.897257+00:00 app[web.1]: at Module._compile (module.js:652:30)
+2018-05-30T17:59:59.897258+00:00 app[web.1]: at Object.Module._extensions..js (module.js:663:10)
+2018-05-30T17:59:59.897259+00:00 app[web.1]: at Module.load (module.js:565:32)
+2018-05-30T17:59:59.897260+00:00 app[web.1]: at tryModuleLoad (module.js:505:12)
+2018-05-30T17:59:59.897261+00:00 app[web.1]: at Function.Module._load (module.js:497:3)
+2018-05-30T17:59:59.897263+00:00 app[web.1]: at Module.require (module.js:596:17)
+2018-05-30T17:59:59.897264+00:00 app[web.1]: at require (internal/module.js:11:18)
+2018-05-30T17:59:59.897266+00:00 app[web.1]: at Object.<anonymous> (/app/server.js:16:10)
+2018-05-30T17:59:59.897267+00:00 app[web.1]: at Module._compile (module.js:652:30)
+2018-05-30T17:59:59.897269+00:00 app[web.1]: at Object.Module._extensions..js (module.js:663:10)
+2018-05-30T17:59:59.897270+00:00 app[web.1]: at Module.load (module.js:565:32)
+2018-05-30T17:59:59.897272+00:00 app[web.1]: at tryModuleLoad (module.js:505:12)
+2018-05-30T17:59:59.897274+00:00 app[web.1]: at Function.Module._load (module.js:497:3)
+2018-05-30T17:59:59.897275+00:00 app[web.1]: at Function.Module.runMain (module.js:693:10)
+2018-05-30T17:59:59.897277+00:00 app[web.1]: at startup (bootstrap_node.js:191:16)
+2018-05-30T17:59:59.897278+00:00 app[web.1]: at bootstrap_node.js:612:3
+2018-05-30T17:59:59.903902+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-05-30T17:59:59.904174+00:00 app[web.1]: npm ERR! errno 1
+2018-05-30T17:59:59.905243+00:00 app[web.1]: npm ERR! voting-app@1.0.0 start: `node server.js`
+2018-05-30T17:59:59.905340+00:00 app[web.1]: npm ERR! Exit status 1
+2018-05-30T17:59:59.905501+00:00 app[web.1]: npm ERR!
+2018-05-30T17:59:59.905611+00:00 app[web.1]: npm ERR! Failed at the voting-app@1.0.0 start script.
+2018-05-30T17:59:59.905710+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-05-30T17:59:59.909639+00:00 app[web.1]: 
+2018-05-30T17:59:59.909773+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-05-30T17:59:59.909855+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-05-30T17_59_59_906Z-debug.log
+2018-05-30T17:59:59.960674+00:00 heroku[web.1]: Process exited with status 1
+2018-05-30T17:59:59.975332+00:00 heroku[web.1]: State changed from starting to crashed
+2018-05-30T18:00:34.404531+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mighty-basin-40310.herokuapp.com request_id=c7794f42-506f-42ef-bfb4-2ce8e3be0c6d fwd="173.75.219.189" dyno= connect= service= status=503 bytes= protocol=https
+2018-05-30T18:00:34.538028+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=mighty-basin-40310.herokuapp.com request_id=6ecbf70d-f44d-4d02-8acc-3c5221429aee fwd="173.75.219.189" dyno= connect= service= status=503 bytes= protocol=https
